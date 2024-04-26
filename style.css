@@ -1,0 +1,19 @@
+img {
+    width: 200px;
+    border-radius: 100px;
+    float: left;
+    margin-right: 20px;
+  }
+
+  p.username {
+    font-weight: bolder;
+  }
+  p.text {
+    color: blue;
+  }
+  em {
+    color: red;
+    font-size: xx-large;
+    font-style: italic;
+  }
+  
