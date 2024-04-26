@@ -1,24 +1,31 @@
 body {
-	animation: gradient-animation 15s ease-in-out infinite; /* Longer duration with easing */
+	background: linear-gradient(to right, #43cea2, #185a9d);
+	margin: 0px;
     }
-    
-    @keyframes gradient-animation {
-	0% {
-	    background: linear-gradient(to right, #ff7e5f, #feb47b);
-	}
-	25% {
-	    background: linear-gradient(to right, #feb47b, #43cea2); /* Adding more keyframes for smoother transitions */
-	}
-	50% {
-	    background: linear-gradient(to right, #43cea2, #185a9d);
-	}
-	75% {
-	    background: linear-gradient(to right, #185a9d, #ff7e5f);
-	}
-	100% {
-	    background: linear-gradient(to right, #ff7e5f, #feb47b);
-	}
-    }
+main {margin: 20px;}
+h1{
+	text-align: center;
+}
+.navbar ul{
+	list-style-type: none;
+	background-color: rgb(79, 79, 79);
+	padding: 0px;
+	margin: 0px;
+	overflow: hidden;
+}
+.navbar a{
+	color: white;
+	text-decoration: none;
+	padding: 15px;
+	display:block;
+	text-align: center;
+}
+.navbar a:hover{
+	background-color: rgb(48, 48, 48);
+}
+.navbar li{
+	float: left;
+}
 img {
     width: 200px;
     border-radius: 100px;
