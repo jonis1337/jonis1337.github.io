@@ -1,47 +1,146 @@
 body {
 	background: linear-gradient(to right, #43cea2, #185a9d);
 	margin: 0px;
-    }
-main {margin: 20px;}
-h1{
+	padding: 0px;
+	box-sizing: border-box;
+	font-family: 'Times New Roman', Times, serif;
+}
+
+main {
+	margin: 20px;
+}
+
+h1 {
 	text-align: center;
 }
-.navbar ul{
+
+.navbar {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	border-radius: 10px;
+}
+
+.navbar ul {
 	list-style-type: none;
-	background-color: rgb(79, 79, 79);
 	padding: 0px;
 	margin: 0px;
 	overflow: hidden;
 }
-.navbar a{
+
+.navbar a {
 	color: white;
 	text-decoration: none;
 	padding: 15px;
-	display:block;
+	display: block;
 	text-align: center;
+	border-radius: 20px;
 }
-.navbar a:hover{
+
+.navbar a:hover {
 	background-color: rgb(48, 48, 48);
 }
-.navbar li{
-	float: left;
-}
-img {
-    width: 200px;
-    border-radius: 100px;
-    float: left;
-    margin-right: 20px;
-  }
 
-  p.username {
-    font-weight: bolder;
-  }
-  p.text {
-    color: blue;
-  }
-  em {
-    color: red;
-    font-size: xx-large;
-    font-style: italic;
-  }
-  
+.navbar li {
+	display: inline-block;
+	list-style: none;
+	font-size: 17px;
+	padding: 12px 18px 12px;
+}
+
+.logo {
+	display: flex;
+	align-items: center;
+}
+
+.logo img {
+	width: 50px;
+	height: auto;
+	border-radius: 50%;
+}
+
+p.username {
+	font-weight: bolder;
+}
+
+p.text {
+	color: blue;
+}
+
+em {
+	color: red;
+	font-size: xx-large;
+	font-style: italic;
+}
+
+.container {
+	width: 100%;
+	min-height: 100vh;
+	background: linear-gradient(135deg, #55004c, #583600);
+	padding: 10px;
+}
+
+.todo {
+	width: 100%;
+	max-width: 540px;
+	background-color: white;
+	margin: 100px auto 20px;
+	padding: 40px 30px 70px;
+	border-radius: 30px;
+}
+
+.todo h2 {
+	color: #002765;
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.row {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background: #d1d1d1;
+	border-radius: 30px;
+	padding-left: 20px;
+	margin-bottom: 25px;
+}
+
+input {
+	flex: 1;
+	border: none;
+	outline: none;
+	background: transparent;
+}
+
+button {
+	border: none;
+	outline: none;
+	padding: 16px 30px;
+	border-radius: 30px;
+	background: #ff000097;
+	color: white;
+	cursor: pointer;
+}
+
+.list li{
+	list-style: none;
+	font-size: 17px;
+	padding: 12px 8px 12px 30px;
+	user-select: none;
+	cursor: pointer;
+	position: relative;
+}
+
+.list li::before{
+	content: '';
+	position: absolute;
+	height: 28px;
+	width: 28px;
+	border-radius: 50%;
+	background-image: url(images/unchecked.png);
+	background-size: cover;
+	background-position: center;
+	top: 12px;
+	left: -10px;
+}

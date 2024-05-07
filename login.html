@@ -11,26 +11,27 @@
 </head>
 
 <body>
-	<h1>M-ligan</h1>
+	<h1>Jonisens</h1>
 	<nav class="navbar">
+		<div class="logo">
+			<img src="images/dog.jpg" alt="logo">
+		</div>
 		<ul>
 			<li><a href="index.html">Home</a></li>
+			<li><a href="todo.html">Todo</a></li>
 			<li><a href="about.html">About</a></li>
-			<li><a href="members.html">Members</a></li>
 			<li><a href="login.html">Login</a></li>
 		</ul>
 
 	</nav>
 	<main>
-
-		<h3>
-			Welcome to the home page
-		</h3>
-		<p>
-			Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores veritatis, enim sapiente rem recusandae
-			saepe delectus vel nostrum molestiae culpa libero tempora alias excepturi officiis nihil aperiam omnis
-			beatae ex?
-		</p>
+		<form action="login.php" method="post">
+			<label for="username">Username:</label>
+			<input type="text" id="username" name="username" required>
+			<label for="password">Password:</label>
+			<input type="password" id="password" name="password" required>
+			<button type="submit">Login</button>
+		</form>
 	</main>
 </body>
 
