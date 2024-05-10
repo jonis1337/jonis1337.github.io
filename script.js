@@ -1,6 +1,7 @@
 const inputBox = document.getElementById("input-box");
 const listContainer = document.getElementById("list-container");
 
+
 function addTask(){
 	if(inputBox.value === ''){
 		alert("Du måste skriva något!");
@@ -17,6 +18,11 @@ function addTask(){
 
 }
 
+inputBox.addEventListener("keydown", function(e){
+	if (e.key === "Enter") {
+		addTask();
+	}
+});
 
 listContainer-addEventListener("click", function(e){
 	if(e.target.tagName === "LI"){
