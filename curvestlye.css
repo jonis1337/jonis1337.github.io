@@ -1,0 +1,80 @@
+body{
+	color: aliceblue;
+	overflow-x: hidden;
+
+	
+}
+main{
+	margin: 0px;
+}
+
+section{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	min-height: 400px;
+	padding: 100px 20vw;
+}
+.blue{
+	background: rgb(17, 140, 255);
+}
+.darker{
+	background: rgb(0, 21, 42)
+}
+
+.curves {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.curves svg {
+    position: relative;
+    display: block;
+    width: calc(107% + 1.3px);
+    height: 125px;
+}
+
+.curves .shape-fill {
+    fill: rgb(17, 140, 255);
+}
+
+.curves2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.curves2 svg {
+    position: relative;
+    display: block;
+    width: calc(107% + 1.3px);
+    height: 120px;
+    transform: rotateY(180deg);
+	transform: translateY(1%);
+}
+
+.curves2 .shape-fill {
+    fill:  rgb(17, 140, 255);
+}
+
+
+
+.border_wave{
+	aspect-ratio: 900/300;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+.waves{
+	background-image: url(images/waves.svg);
+}
