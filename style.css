@@ -211,9 +211,7 @@ em {
 	.list li {
 	  font-size: 14px; /* Smaller font size for compactness */
 	}
-	.navbar .hideOnMobile{
-		display: none;
-	}
+	
   }
   
   @media (max-width: 480px) {
@@ -241,6 +239,13 @@ em {
 		justify-content:center;
 		align-content: center;
 		text-align: center;
+	}
+	.navbar .hideOnMobile{
+		display: none;
+	}
+	.menu-button{
+		display: block;
+		pointer-events: all;
 	}
 	.sidebar li{
 		width: 100%;
