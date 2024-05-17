@@ -19,16 +19,22 @@
 <body>
 	<h1>Jonisens</h1>
 	<nav class="navbar">
-		<div class="logo">
-			<img src="images/dog.jpg" alt="logo">
-		</div>
 		<ul>
+			<li class="hideOnMobile"><a href="index.html">Home</a></li>
+			<li class="hideOnMobile"><a href="todo.html">Todo</a></li>
+			<li class="hideOnMobile"><a href="about.html">About</a></li>
+			<li class="hideOnMobile"><a href="login.html">Login</a></li>
+			<li class="menu-button" onclick=showSidebar()><a href="#"><svg class="menu-button" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+		</ul>
+	</nav>
+	<nav class="navbar">
+		<ul class="sidebar">
+			<li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
 			<li><a href="index.html">Home</a></li>
 			<li><a href="todo.html">Todo</a></li>
 			<li><a href="about.html">About</a></li>
 			<li><a href="login.html">Login</a></li>
 		</ul>
-
 	</nav>
 	<main>
 		<section>
@@ -135,6 +141,7 @@
 				dolore earum magni ut officiis error.</p>
 		</section>
 	</main>
+	<script src="indexscript.js"></script>
 </body>
 
 </html>
